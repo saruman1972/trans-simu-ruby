@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<field_def character_set="ebcdic">
+	<field>
+		<name> F01 </name>
+		<index> 1 </index>
+		<description> Network ID </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> F02 </name>
+		<index> 2 </index>
+		<description> Network ID </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> F03 </name>
+		<index> 3 </index>
+		<description> Message Reason Code </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> F04 </name>
+		<index> 4 </index>
+		<description> STIP/Switch Reason Code </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> F06 </name>
+		<index> 6 </index>
+		<description> Chargeback Reduction/BASE II Flags </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 7 </size>
+	</field>
+	<field>
+		<name> F07 </name>
+		<index> 7 </index>
+		<description> Duration </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> F08 </name>
+		<index> 8 </index>
+		<description> Visa Acquirer's Business ID </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 8 </size>
+	</field>
+	<field>
+		<name> F09 </name>
+		<index> 9 </index>
+		<description> Fraud Notification Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 14 </size>
+	</field>
+	<field>
+		<name> F11 </name>
+		<index> 11 </index>
+		<description> Reimbursement Attribute </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F12 </name>
+		<index> 12 </index>
+		<description> Sharing Group Code </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F13 </name>
+		<index> 13 </index>
+		<description> Decimal Positions Indicator </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+	</field>
+	<field>
+		<name> F14 </name>
+		<index> 14 </index>
+		<description> Issuer Currency Conversion Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 36 </size>
+	</field>
+	<field>
+		<name> F15 </name>
+		<index> 15 </index>
+		<description> Settlement Amount, Acquirer Currency Conversion Fee Allocation </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 9 </size>
+	</field>
+	<field>
+		<name> F16 </name>
+		<index> 16 </index>
+		<description> Visa ImagExpress Workstation(VIEW) Station BIN Address </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+	</field>
+	<field>
+		<name> F17 </name>
+		<index> 17 </index>
+		<description> Additional Data Indicator </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F18 </name>
+		<index> 18 </index>
+		<description> Volumn-Tier Request Indicator </description>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F19 </name>
+		<index> 19 </index>
+		<description> Fee Program Indicator </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+</field_def>
+

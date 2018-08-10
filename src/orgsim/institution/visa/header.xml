@@ -1,0 +1,109 @@
+<field_def char_set="ebcdic">
+    <field type='LENGTH' start='H01' end='body'>
+        <name> H01 </name>
+        <description> Header Length </description>
+        <field_encode> FE_B </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 1 </size>
+    </field>
+    <field>
+        <name> H02 </name>
+        <description> Header Flag and Format </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+    </field>
+    <field>
+      <name> H03 </name>
+      <description> Text Format </description>
+      <field_encode> FE_BCD </field_encode>
+      <field_type> FT_FIXED </field_type>
+      <size> 2 </size>
+    </field>
+    <field type='LENGTH' start='H01'>
+        <name> H04 </name>
+        <description> Total Message Length  </description>
+        <field_encode> FE_B </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+    </field>
+    <field>
+        <name> H05 </name>
+        <description> Destination Station ID  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 6 </size>
+    </field>
+    <field>
+        <name> H06 </name>
+        <description> Source Station ID  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 6 </size>
+    </field>
+    <field>
+        <name> H07 </name>
+        <description> Round Trip Control Information  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+    </field>
+    <field>
+        <name> H08 </name>
+        <description> Base I Flag  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 4 </size>
+    </field>
+    <field>
+        <name> H09 </name>
+        <description> Message Status Flags  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 6 </size>
+    </field>
+    <field>
+        <name> H10 </name>
+        <description> Batch Number  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+    </field>
+    <field>
+        <name> H11 </name>
+        <description> Reserved </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 6 </size>
+    </field>
+    <field>
+        <name> H12 </name>
+        <description> User Information  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+    </field>
+<!--    <field type='PATTERN_PACKAGE' field_def='package.xml'>
+      <name> body </name>
+      <desc> Message Body </desc>
+    </field> -->
+    <field type='PATTERN_PACKAGE' name='body' desc='Message Body'>
+        <field>
+            <name> MessageType </name>
+            <desc> Message Type </desc>
+            <field_encode> FE_BCD </field_encode>
+            <field_type> FT_FIXED </field_type>
+            <size> 4 </size>
+        </field>
+        <field type='BITMAP'>
+            <name> bitmap </name>
+            <desc> Bitmap </desc>
+            <field_encode> FE_B </field_encode>
+            <field_type> FT_FIXED </field_type>
+            <size> 192 </size>
+        </field>
+        <field type='BITMAP_PACKAGE' bitmap='bitmap' field_def='VisaFieldDef.xml'>
+            <desc> Message </desc>
+        </field>
+    </field>
+</field_def>

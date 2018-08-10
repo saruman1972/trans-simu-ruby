@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<field_def character_set="ebcdic">
+	<field>
+		<name> F06 </name>
+		<index> 6 </index>
+		<description> Cardholder Certificate Serial Number </description>
+		<field_encode> FE_BHX </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 32 </size>
+	</field>
+	<field>
+		<name> F07 </name>
+		<index> 7 </index>
+		<description> Merchant Certificate Serial Number </description>
+		<field_encode> FE_BHX </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 32 </size>
+	</field>
+	<field>
+		<name> F08 </name>
+		<index> 8 </index>
+		<description> Transaction ID </description>
+		<field_encode> FE_BHX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 40 </size>
+	</field>
+	<field>
+		<name> F09 </name>
+		<index> 9 </index>
+		<description> Transaction Stain/CAVV </description>
+		<field_encode> FE_BHX </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 40 </size>
+	</field>
+	<field>
+		<name> F10 </name>
+		<index> 10 </index>
+		<description> CVV2 Authorization Request Data </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 6 </size>
+	</field>
+	<field>
+		<name> F11 </name>
+		<index> 11 </index>
+		<description> IGOTS Transaction Description </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> F12 </name>
+		<index> 12 </index>
+		<description> Service Indicators </description>
+		<field_encode> FE_B </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 3 </size>
+	</field>
+	<field>
+		<name> F13 </name>
+		<index> 13 </index>
+		<description> POS Enviroment </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F14 </name>
+		<index> 14 </index>
+		<description> Payment Guarantee Option Indicator </description>
+		<field_encode> FE_AN </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F15 </name>
+		<index> 15 </index>
+		<description> MasterCard UCAF Collection Indicator </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F16 </name>
+		<index> 16 </index>
+		<description> MasterCard UCAF Collection Field </description>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_V1VAR </field_type>
+		<size> 32 </size>
+	</field>
+</field_def>
+

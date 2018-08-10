@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<field_def character_set="ebcdic">
+	<field>
+		<name> F01 </name>
+		<index> 1 </index>
+		<description> Authorization Characteristics Indicator </description>
+		<inner_field_name> caField01 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F02 </name>
+		<index> 2 </index>
+		<description> Transaction Identifier </description>
+		<inner_field_name> caField02 </inner_field_name>
+		<field_encode> FE_BC0 </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 15 </size>
+	</field>
+	<field>
+		<name> F03 </name>
+		<index> 3 </index>
+		<description> Validation Code </description>
+		<inner_field_name> caField03 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 4 </size>
+	</field>
+	<field>
+		<name> F04 </name>
+		<index> 4 </index>
+		<description> Market Data Identifier </description>
+		<inner_field_name> caField04 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F05 </name>
+		<index> 5 </index>
+		<description> Duration </description>
+		<inner_field_name> caField05 </inner_field_name>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> F06 </name>
+		<index> 6 </index>
+		<description> Prestigious Property Indicator </description>
+		<inner_field_name> caField06 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F17 </name>
+		<index> 17 </index>
+		<description> MasterCard Interchange Compliance </description>
+		<inner_field_name> caField17 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 15 </size>
+	</field>
+	<field>
+		<name> F20 </name>
+		<index> 20 </index>
+		<description> Merchant Verification Value </description>
+		<inner_field_name> caField20 </inner_field_name>
+		<field_encode> FE_BCD </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 10 </size>
+	</field>
+</field_def>
+

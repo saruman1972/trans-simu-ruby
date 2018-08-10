@@ -1,0 +1,29 @@
+---
+name: BOS 2.1 test
+desc: BOS 2.1 test
+field_def: package.xml
+card_file: card.csv
+acquirer_file: acquirer.csv
+log_file: orgsim.db
+pan_field_name: body.F002
+pan_sn_field_name: body.F023
+ic_field_name: body.F055
+ac_tags: "9F02,9F03,9F1A,95,5F2A,9A,9C,9F37,82,9F36,9F10"
+zpk: "1111111111111111"
+mk_ac: "11111111111111112222222222222222"
+mk_smi: "11111111111111112222222222222222"
+header_flag_and_version: "01"
+destination_station_id: "123456"
+source_station_id: "654321"
+
+body_field_name: body
+eval_body_cond: "buf[0].ord != 0x2e"
+body_only: false
+
+communication:
+  type: DUPLEX_SERVER
+  localPort: 8888
+  lengthCodecStr: LENGTH_ASCII
+  lengthLen: 4
+  paddingAfter: "99"
+  paddingBefore: "88"

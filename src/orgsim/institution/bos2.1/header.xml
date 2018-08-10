@@ -1,0 +1,106 @@
+<field_def>
+    <field type='LENGTH' start='header.H01' end='body'>
+        <name> H01 </name>
+        <index> 1 </index>
+        <description> Header Length </description>
+        <field_encode> FE_B </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 1 </size>
+    </field>
+    <field>
+        <name> H02 </name>
+        <index> 2 </index>
+        <description> Header Flag and Format </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+        <generator name="CONFIG">
+          <property name="name" value="header_flag_and_version" />
+        </generator>
+    </field>
+    <field type='LENGTH' start='header.H01'>
+        <name> H03 </name>
+        <index> 3 </index>
+        <description> Total Message Length  </description>
+        <field_encode> FE_N </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 4 </size>
+    </field>
+    <field>
+        <name> H04 </name>
+        <index> 4 </index>
+        <description> Destination Station ID  </description>
+        <field_encode> FE_ANS </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 11 </size>
+        <generator name="CONFIG">
+          <property name="name" value="destination_station_id" />
+        </generator>
+    </field>
+    <field>
+        <name> H05 </name>
+        <index> 5 </index>
+        <description> Source Station ID  </description>
+        <field_encode> FE_ANS </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 11 </size>
+        <generator name="CONFIG">
+          <property name="name" value="source_station_id" />
+        </generator>
+    </field>
+    <field>
+        <name> H06 </name>
+        <index> 6 </index>
+        <description> Reserved for Use  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 6 </size>
+        <generator name="FIXED">
+          <property name="value" value="000000" />
+        </generator>
+    </field>
+    <field>
+        <name> H07 </name>
+        <index> 7 </index>
+        <description> Batch Number  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+        <generator name="FIXED">
+          <property name="value" value="01" />
+        </generator>
+    </field>
+    <field>
+        <name> H08 </name>
+        <index> 8 </index>
+        <description> Transaction Information  </description>
+        <field_encode> FE_ANS </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 8 </size>
+        <generator name="FIXED">
+          <property name="value" value="00" />
+        </generator>
+    </field>
+    <field>
+        <name> H09 </name>
+        <index> 9 </index>
+        <description> User Information  </description>
+        <field_encode> FE_BCD </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 2 </size>
+        <generator name="FIXED">
+          <property name="value" value="00" />
+        </generator>
+    </field>
+    <field>
+        <name> H10 </name>
+        <index> 10 </index>
+        <description> Reject Code  </description>
+        <field_encode> FE_N </field_encode>
+        <field_type> FT_FIXED </field_type>
+        <size> 5 </size>
+        <generator name="FIXED">
+          <property name="value" value="00000" />
+        </generator>
+    </field>
+</field_def>

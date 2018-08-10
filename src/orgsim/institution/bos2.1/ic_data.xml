@@ -1,0 +1,117 @@
+<field_def pack_tags="9F02,9F03,9F1A,95,5F2A,9A,9C,9F37,82,9F36,9F10,9F26,DF31">
+  <field>
+    <desc> Authorized Amount </desc>
+    <tag> 9F02 </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 12 </size>
+  </field>
+  <field>
+    <desc> Other Amount </desc>
+    <tag> 9F03 </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 12 </size>
+  </field>
+  <field>
+    <desc> Terminal Country Code </desc>
+    <tag> 9F1A </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 3 </size>
+  </field>
+  <field>
+    <desc> Terminal Verifycation Result </desc>
+    <tag> 95 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 5 </size>
+  </field>
+  <field>
+    <desc> Transaction Currency Code </desc>
+    <tag> 5F2A </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 3 </size>
+  </field>
+  <field>
+    <desc> Transaction Date </desc>
+    <tag> 9A </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 6 </size>
+    <generator name="DATE_TIME">
+      <property name="format" value="%y%m%d" />
+    </generator>
+  </field>
+  <field>
+    <desc> Transaction Type </desc>
+    <tag> 9C </tag>
+    <field_encode> FE_BC0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 2 </size>
+  </field>
+  <field>
+    <desc> Unpredictable Number </desc>
+    <tag> 9F37 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 4 </size>
+    <generator name="RANDOM">
+      <property name="max" value="4294967295" />
+    </generator>
+  </field>
+  <field>
+    <desc> Application Interactive Property </desc>
+    <tag> 82 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 2 </size>
+  </field>
+  <field>
+    <desc> Application Transaction Counter </desc>
+    <tag> 9F36 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 2 </size>
+    <generator name="SEQ_NO">
+      <property name="max" value="999999999999" />
+    </generator>
+  </field>
+  <field>
+    <desc> Issuer Application Data </desc>
+    <tag> 9F10 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 8 </size>
+  </field>
+  <field>
+    <desc> Application Cryptogram </desc>
+    <tag> 9F26 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 8 </size>
+  </field>
+  <field>
+    <desc> Issuer Authentication Data </desc>
+    <tag> 91 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 8 </size>
+  </field>
+  <field>
+    <desc> Issuer Script Template 2 </desc>
+    <tag> 72 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 256 </size>
+  </field>
+  <field>
+    <desc> Issuer Script Results </desc>
+    <tag> DF31 </tag>
+    <field_encode> FE_B0 </field_encode>
+    <field_type> FT_FIXTLV </field_type>
+    <size> 5 </size>
+    <fixvalue value="0007020000" />
+  </field>
+</field_def>

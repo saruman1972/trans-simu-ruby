@@ -1,0 +1,3 @@
+id,name,merchant_id,terminal_id,mcc,trxn_curr_cd,acq_inst_cd,fwd_inst_cd,ic_terminal_type,ic_ifd,ic_df,ic_tav,ic_tsc
+1,POS001,40001234,001,5311,156,03112900,03112900,11,12345678,FFFFFFFF,01,1
+2,ATM001,40005678,001,6011,156,03112900,03112900,11,12345678,FFFFFFFF,01,1

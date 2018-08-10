@@ -1,0 +1,17 @@
+---
+name: VISA vip test
+desc: VISA vip test
+field_def: header.xml
+card_file: card.csv
+acquirer_file: acquirer.csv
+log_file: orgsim.db
+pan_field_name: body.F002
+pan_sn_field_name: body.F023
+zpk: "1111111111111111"
+communication:
+  type: DUPLEX_CLIENT
+  localPort: 7403
+  lengthCodecStr: LENGTH_BINARY
+  lengthLen: 2
+  paddingAfter: "\x00\x00"
+

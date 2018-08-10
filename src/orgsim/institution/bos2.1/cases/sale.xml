@@ -1,0 +1,279 @@
+<trans_case card_index="2" acquirer_index="1" name="sale" desc="sale">
+  <action type="OUTGOING_MESSAGE">
+    <!-- <field> -->
+    <!--   <name> H02 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 01 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H04 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 123456 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H05 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 012345 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H06 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 123456 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H07 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 01 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H08 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 00 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H09 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 00 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <!-- <field> -->
+    <!--   <name> H10 </name> -->
+    <!--   <value type="FIXED"> -->
+    <!--     <property name="value"> 00000 </property> -->
+    <!--   </value> -->
+    <!-- </field> -->
+    <field>
+      <name> body.MessageType </name>
+      <value type="FIXED">
+        <property name="value"> 0200 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F002 </name>
+      <value type="VARIABLE_CARD"> 
+        <property name="column"> card_no </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F003 </name>
+    </field>
+    <field>
+      <name> body.F004 </name>
+    </field>
+    <field>
+      <name> body.F007 </name>
+    </field>
+    <field>
+      <name> body.F011 </name>
+    </field>
+    <field>
+      <name> body.F012 </name>
+    </field>
+    <field>
+      <name> body.F013 </name>
+    </field>
+    <field>
+      <name> body.F015 </name>
+    </field>
+    <field>
+      <name> body.F018 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> mcc </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F022 </name>
+      <value type="FIXED">
+        <property name="value"> 021 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F023 </name>
+      <value type="VARIABLE_CARD">
+        <property name="column"> ic_seq </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F025 </name>
+      <value type="FIXED">
+        <property name="value"> 01 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F026 </name>
+      <value type="FIXED">
+        <property name="value"> 06 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F032 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> acq_inst_cd </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F033 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> fwd_inst_cd </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F035 </name>
+      <value type="VARIABLE_CARD">
+        <property name="column"> trk2_data </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F037 </name>
+      <value type="FIXED">
+        <property name="value"> 0000000 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F041 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> terminal_id </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F042 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> merchant_id </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F043 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> name </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F049 </name>
+      <value type="VARIABLE_ACQUIRER">
+        <property name="column"> trxn_curr_cd </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F052 </name>
+      <pack_hook type="PIN" />
+    </field>
+    <field>
+      <name> body.F055.tag9F02 </name>
+      <value type="CURRENT_MESSAGE">
+        <property name="field_name"> body.F004 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9F03 </name>
+      <value type="CURRENT_MESSAGE">
+        <property name="field_name"> body.F004 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9F1A </name>
+      <value type="CURRENT_MESSAGE">
+        <property name="field_name"> body.F049 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag95 </name>
+      <value type="FIXED">
+        <property name="value"> 123456 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag5F2A </name>
+      <value type="CURRENT_MESSAGE">
+        <property name="field_name"> body.F049 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9A </name>
+    </field>
+    <field>
+      <name> body.F055.tag9C </name>
+      <value type="CURRENT_MESSAGE">
+        <property name="field_name"> body.F003.F1 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9F37 </name>
+    </field>
+    <field>
+      <name> body.F055.tag82 </name>
+      <value type="FIXED">
+        <property name="value"> 1234 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9F36 </name>
+    </field>
+    <field>
+      <name> body.F055.tag9F10 </name>
+      <value type="FIXED">
+        <property name="value"> 070101ABCDABCD01 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F055.tag9F26 </name>
+      <pack_hook type="ARQC" />
+    </field>
+    <field>
+      <name> body.F060.F001 </name>
+      <pack_hook type="PIN" />
+    </field>
+    <field>
+      <name> body.F090.F01 </name>
+      <value type="PREVIOUS_OUTGOING">
+        <property name="field_name"> body.MessageType </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F090.F02 </name>
+      <value type="PREVIOUS_OUTGOING">
+        <property name="field_name"> body.F011 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F090.F03 </name>
+      <value type="PREVIOUS_OUTGOING">
+        <property name="field_name"> body.F007 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F090.F04 </name>
+      <value type="PREVIOUS_OUTGOING">
+        <property name="field_name"> body.F032 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F090.F05 </name>
+      <value type="PREVIOUS_OUTGOING">
+        <property name="field_name"> body.F033 </property>
+      </value>
+    </field>
+  </action>
+
+  <action type="DELAY" interval="2"/>
+
+  <action type="INCOMING_MESSAGE" timeout="30">
+    <field>
+      <name> body.F039 </name>
+      <value type="FIXED"> 
+        <property name="value"> 00 </property>
+      </value>
+    </field>
+    <field>
+      <name> body.F041 </name>
+      <value type="PREVIOUS_INCOMING">
+        <property name="field_name"> body.F041 </property>
+      </value>
+    </field>
+  </action>
+</trans_case>

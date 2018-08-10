@@ -1,0 +1,25 @@
+<field_def>
+  <field type='PATTERN_PACKAGE' name='header' desc='Message Header' field_def='header.xml'>
+    <desc> Message Header </desc>
+  </field>
+  
+    <field type='PATTERN_PACKAGE' name='body' desc='Message Body'>
+        <field>
+            <name> MessageType </name>
+            <desc> Message Type </desc>
+            <field_encode> FE_ANS </field_encode>
+            <field_type> FT_FIXED </field_type>
+            <size> 4 </size>
+        </field>
+        <field type='BITMAP'>
+            <name> bitmap </name>
+            <desc> Bitmap </desc>
+            <field_encode> FE_B </field_encode>
+            <field_type> FT_FIXED </field_type>
+            <size> 192 </size>
+        </field>
+        <field type='BITMAP_PACKAGE' bitmap='bitmap' field_def='Bos21FieldDef.xml'>
+            <desc> Message </desc>
+        </field>
+    </field>
+</field_def>

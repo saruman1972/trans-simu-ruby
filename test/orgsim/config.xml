@@ -1,0 +1,10 @@
+<config>
+  <name> BOS 2.1 test </name>
+  <field_def> header.xml </field_def>
+  <communication> 
+    <hash>
+      <type> duplex_server </type>
+      <local_port> 8888 </local_port>
+    </hash>
+  </communication>
+</config>

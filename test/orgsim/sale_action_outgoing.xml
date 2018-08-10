@@ -1,0 +1,26 @@
+<user_interface type="GENERAL">
+  <field type="TEXT">
+    <value>processing code</value>
+    <size>20</size>
+    <left>10</left>
+    <top>10</top>
+    <width>160</width>
+    <height>20</height>
+  </field>
+  <field type="STRING_INPUT">
+    <name>body.F003</name>
+    <size>6</size>
+    <left>10</left>
+    <top>30</top>
+    <width>160</width>
+    <height>20</height>
+  </field>
+  <field type="AMOUNT_INPUT">
+    <name>body.F004</name>
+    <size>14</size>
+    <left>10</left>
+    <top>50</top>
+    <width>160</width>
+    <height>20</height>
+  </field>
+</user_interface>

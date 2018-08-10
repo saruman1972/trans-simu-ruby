@@ -1,0 +1,10 @@
+---
+name: BOS 2.1 test
+field_def: header.xml
+communication:
+  localPort: 8888
+  paddingAfter: "0000"
+  type: DUPLEX_SERVER
+  lengthLen: 2
+  lengthCodecStr: LENGTH_BINARY
+

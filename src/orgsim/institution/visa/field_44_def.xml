@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<field_def character_set="ebcdic">
+	<field>
+		<name> F01 </name>
+		<index> 1 </index>
+		<description> Response Source/Reason Code </description>
+		<inner_field_name> caField01 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F02 </name>
+		<index> 2 </index>
+		<description> Address Verification Result Code </description>
+		<inner_field_name> caField02 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F03 </name>
+		<index> 3 </index>
+		<description> Telecode Verification Result Code </description>
+		<inner_field_name> caField03 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F04 </name>
+		<index> 4 </index>
+		<description> Card Product Type </description>
+		<inner_field_name> caField04 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F05 </name>
+		<index> 5 </index>
+		<description> CVV Result Code </description>
+		<inner_field_name> caField05 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F06 </name>
+		<index> 6 </index>
+		<description> PACM Diversion Level Code </description>
+		<inner_field_name> caField06 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> F07 </name>
+		<index> 7 </index>
+		<description> PACM Diversion Reason Code </description>
+		<inner_field_name> caField07 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F08 </name>
+		<index> 8 </index>
+		<description> Card Authentication Result Code </description>
+		<inner_field_name> caField08 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F09 </name>
+		<index> 9 </index>
+		<description> Latin America Additional Response Data </description>
+		<inner_field_name> caField09 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F10 </name>
+		<index> 10 </index>
+		<description> CVV2 Result Cd </description>
+		<inner_field_name> caField10 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F11 </name>
+		<index> 11 </index>
+		<description> Original Response Code </description>
+		<inner_field_name> caField11 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 2 </size>
+	</field>
+	<field>
+		<name> F12 </name>
+		<index> 12 </index>
+		<description> Check Settlement Code(U.S.Only) </description>
+		<inner_field_name> caField12 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+	<field>
+		<name> F13 </name>
+		<index> 13 </index>
+		<description> CAVV Result Code </description>
+		<inner_field_name> caField13 </inner_field_name>
+		<field_encode> FE_ANS </field_encode>
+		<field_type> FT_FIXED </field_type>
+		<size> 1 </size>
+	</field>
+</field_def>
+
